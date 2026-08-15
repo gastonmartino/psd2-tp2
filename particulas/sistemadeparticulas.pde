@@ -27,16 +27,16 @@ class SistemaDeParticulas {
     for (int i = particulas.size() - 1; i >= 0; i--) {
       Particula particula = particulas.get(i);
       particula.actualizar();
-      if (particula.estaFueraDeLaEscena()) {
+      if (particula.estaMuerta() || particula.estaFueraDeLaEscena()) {
         particulas.remove(i);
       }
     }
   }
 
-  void dibujar() {
+  void dibujar(float intensidadDelModoImagen) {
     blendMode(ADD);
     for (Particula particula : particulas) {
-      particula.dibujar();
+      particula.dibujar(intensidadDelModoImagen);
     }
     blendMode(BLEND);
   }

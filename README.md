@@ -25,6 +25,17 @@ Cada tanda de partículas:
 
 El fondo es azul oscuro y las partículas se dibujan en blanco utilizando una mezcla aditiva para producir un efecto luminoso. La cámara rota suavemente para facilitar la percepción del espacio 3D.
 
+## Modo de la imagen
+
+Mientras se mantiene presionada la tecla **C** —mayúscula o minúscula— se activa un modo alternativo inspirado en la imagen `particulas/data/imagen01.jpg`:
+
+- El fondo transiciona gradualmente hacia el color del fondo de la imagen.
+- Los cometas dejan de mostrar una estela degradada y se dibujan como líneas curvas continuas en tonalidades de rojo.
+- Las partículas que todavía están sobre la esfera se agrupan sobre el eje horizontal y vibran mediante ruido Perlin (`noise()`).
+- Las partículas del sistema se dibujan como caminantes, usando una paleta de colores tomada de las líneas de la imagen.
+
+Al soltar la tecla **C**, el programa vuelve gradualmente al modo normal durante aproximadamente dos segundos.
+
 ## Ubicación del sketch
 
 El proyecto se encuentra en la carpeta:
