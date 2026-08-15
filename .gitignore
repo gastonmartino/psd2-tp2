@@ -1,0 +1,9 @@
+# Archivos temporales y autosaves de Processing
+*.autosave
+*.tmp
+
+# Archivos de sistema y configuración local
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
